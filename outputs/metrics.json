@@ -1,0 +1,174 @@
+{
+  "training_mode": "unlabeled_all_training_rows",
+  "train_cleaning": {
+    "input_rows": 175341,
+    "retained_rows": 175341,
+    "dropped_rows": 0
+  },
+  "test_cleaning": {
+    "input_rows": 82332,
+    "retained_rows": 82332,
+    "dropped_rows": 0
+  },
+  "training_rows_used": 175341,
+  "test_rows_scored": 82332,
+  "selected_numeric_features": [
+    "dur",
+    "spkts",
+    "dpkts",
+    "sbytes",
+    "dbytes",
+    "rate",
+    "sload",
+    "dload",
+    "sloss",
+    "dloss",
+    "sinpkt",
+    "dinpkt",
+    "sjit",
+    "djit",
+    "swin",
+    "dwin",
+    "stcpb",
+    "dtcpb",
+    "tcprtt",
+    "synack",
+    "ackdat",
+    "smean",
+    "dmean",
+    "trans_depth",
+    "response_body_len",
+    "ct_srv_src",
+    "ct_state_ttl",
+    "ct_dst_ltm",
+    "ct_src_dport_ltm",
+    "ct_dst_sport_ltm",
+    "ct_dst_src_ltm",
+    "ct_ftp_cmd",
+    "ct_flw_http_mthd",
+    "ct_src_ltm",
+    "ct_srv_dst",
+    "is_ftp_login",
+    "is_sm_ips_ports",
+    "sttl",
+    "dttl",
+    "total_bytes",
+    "bytes_per_second",
+    "inbound_outbound_ratio",
+    "outbound_fraction",
+    "packet_ratio",
+    "sbytes_per_packet",
+    "dbytes_per_packet"
+  ],
+  "selected_categorical_features": [
+    "proto",
+    "service",
+    "state"
+  ],
+  "contamination": 0.01,
+  "flagged_count": 668,
+  "flagged_outbound_bytes": 380588203,
+  "first_flagged_id_by_id_order": 263,
+  "evaluation": {
+    "available": true,
+    "tp": 345,
+    "fp": 323,
+    "tn": 36677,
+    "fn": 44987,
+    "precision": 0.5164670658682635,
+    "recall": 0.007610517956410483,
+    "f1": 0.015,
+    "confusion_matrix": [
+      [
+        36677,
+        323
+      ],
+      [
+        44987,
+        345
+      ]
+    ],
+    "per_category": [
+      {
+        "attack_cat": "Analysis",
+        "total": 677,
+        "attack_rows": 677,
+        "flagged": 0,
+        "detected_attacks": 0,
+        "attack_recall": 0.0
+      },
+      {
+        "attack_cat": "Backdoor",
+        "total": 583,
+        "attack_rows": 583,
+        "flagged": 0,
+        "detected_attacks": 0,
+        "attack_recall": 0.0
+      },
+      {
+        "attack_cat": "DoS",
+        "total": 4089,
+        "attack_rows": 4089,
+        "flagged": 76,
+        "detected_attacks": 76,
+        "attack_recall": 0.018586451455123502
+      },
+      {
+        "attack_cat": "Exploits",
+        "total": 11132,
+        "attack_rows": 11132,
+        "flagged": 222,
+        "detected_attacks": 222,
+        "attack_recall": 0.019942508084800574
+      },
+      {
+        "attack_cat": "Fuzzers",
+        "total": 6062,
+        "attack_rows": 6062,
+        "flagged": 19,
+        "detected_attacks": 19,
+        "attack_recall": 0.0031342791158033654
+      },
+      {
+        "attack_cat": "Generic",
+        "total": 18871,
+        "attack_rows": 18871,
+        "flagged": 23,
+        "detected_attacks": 23,
+        "attack_recall": 0.0012188013353823326
+      },
+      {
+        "attack_cat": "Normal",
+        "total": 37000,
+        "attack_rows": 0,
+        "flagged": 323,
+        "detected_attacks": 0,
+        "attack_recall": null
+      },
+      {
+        "attack_cat": "Reconnaissance",
+        "total": 3496,
+        "attack_rows": 3496,
+        "flagged": 2,
+        "detected_attacks": 2,
+        "attack_recall": 0.0005720823798627002
+      },
+      {
+        "attack_cat": "Shellcode",
+        "total": 378,
+        "attack_rows": 378,
+        "flagged": 0,
+        "detected_attacks": 0,
+        "attack_recall": 0.0
+      },
+      {
+        "attack_cat": "Worms",
+        "total": 44,
+        "attack_rows": 44,
+        "flagged": 3,
+        "detected_attacks": 3,
+        "attack_recall": 0.06818181818181818
+      }
+    ]
+  }
+}
